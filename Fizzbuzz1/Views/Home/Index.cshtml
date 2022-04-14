@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To FizzBuzz</h1>
+    </div>
+
+    <div align="center">
+    
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post)) 
+        {
+            <input type="text" name="TxtValue" id="TxtValue" />
+
+            <input type="submit" value="Submit" />
+        }
+        
+        Result :  @ViewData["Message"]
+    </div>
